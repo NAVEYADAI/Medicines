@@ -12,9 +12,7 @@ public class InventoryEntity {
 
     @Basic
     @Column(name = "id", nullable = false)
-    public int getId() {
-        return id;
-    }
+    public int getId() { return id; }
 
     public void setId(int id) {
         this.id = id;
