@@ -25,7 +25,7 @@ public class PrescriptionsEntity {
 
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id
-    @Column(name = "IDNameOfBall", nullable = false)
+    @Column(name = "id_name_of_ball", nullable = false)
     public int getIdNameOfBall() {
         return idNameOfBall;
     }
@@ -35,7 +35,7 @@ public class PrescriptionsEntity {
     }
 
     @Basic
-    @Column(name = "IDUser", nullable = false)
+    @Column(name = "id_user", nullable = false)
     public int getIdUser() {
         return idUser;
     }
@@ -45,7 +45,7 @@ public class PrescriptionsEntity {
     }
 
     @Basic
-    @Column(name = "endPrescriptions", nullable = false)
+    @Column(name = "end_prescriptions", nullable = false)
     public Date getEndPrescriptions() {
         return endPrescriptions;
     }
@@ -55,7 +55,7 @@ public class PrescriptionsEntity {
     }
 
     @Basic
-    @Column(name = "startPrescriptions", nullable = false)
+    @Column(name = "start_prescriptions", nullable = false)
     public Date getStartPrescriptions() {
         return startPrescriptions;
     }

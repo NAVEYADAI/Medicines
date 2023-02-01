@@ -32,7 +32,7 @@ public class InventoryEntity {
 
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id
-    @Column(name = "IDNameOfBall", nullable = false)
+    @Column(name = "id_name_of_ball", nullable = false)
     public int getIdNameOfBall() {
         return idNameOfBall;
     }
@@ -42,7 +42,7 @@ public class InventoryEntity {
     }
 
     @Basic
-    @Column(name = "IDUser", nullable = false)
+    @Column(name = "id_user", nullable = false)
     public int getIdUser() {
         return idUser;
     }

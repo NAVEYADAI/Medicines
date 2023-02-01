@@ -25,7 +25,7 @@ public class TakeBallEntity {
 
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id
-    @Column(name = "IDNameOfBall", nullable = false)
+    @Column(name = "id_name_of_ball", nullable = false)
     public int getIdNameOfBall() {
         return idNameOfBall;
     }
@@ -35,7 +35,7 @@ public class TakeBallEntity {
     }
 
     @Basic
-    @Column(name = "IDRestrictions", nullable = false)
+    @Column(name = "id_restrictions", nullable = false)
     public int getIdRestrictions() {
         return idRestrictions;
     }
@@ -45,7 +45,7 @@ public class TakeBallEntity {
     }
 
     @Basic
-    @Column(name = "IDUser", nullable = false)
+    @Column(name = "id_user", nullable = false)
     public int getIdUser() {
         return idUser;
     }

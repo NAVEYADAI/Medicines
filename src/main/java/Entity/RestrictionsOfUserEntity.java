@@ -31,7 +31,7 @@ public class RestrictionsOfUserEntity {
     }
 
     @Basic
-    @Column(name = "IDUser", nullable = false)
+    @Column(name = "id_user", nullable = false)
     public int getIdUser() {
         return idUser;
     }

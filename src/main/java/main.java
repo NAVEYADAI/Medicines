@@ -12,6 +12,7 @@ public class main {
 
         try{
             transaction.begin();
+
             NameOfBallEntity name=new NameOfBallEntity();
             name.setNameBall("yadai");
             entityManager.persist(name);
