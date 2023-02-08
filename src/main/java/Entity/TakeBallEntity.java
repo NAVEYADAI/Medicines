@@ -13,6 +13,24 @@ public class TakeBallEntity {
     private int idUser;
     private Date time;
 
+    public TakeBallEntity() {
+    }
+
+    public TakeBallEntity(int id, int idNameOfBall, int idRestrictions, int idUser, Date time) {
+        this.id = id;
+        this.idNameOfBall = idNameOfBall;
+        this.idRestrictions = idRestrictions;
+        this.idUser = idUser;
+        this.time = time;
+    }
+
+    public TakeBallEntity(int idNameOfBall, int idRestrictions, int idUser, Date time) {
+        this.idNameOfBall = idNameOfBall;
+        this.idRestrictions = idRestrictions;
+        this.idUser = idUser;
+        this.time = time;
+    }
+
     @Basic
     @Column(name = "id", nullable = false)
     public int getId() {

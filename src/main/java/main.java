@@ -18,12 +18,16 @@ public class main {
         EntityTransaction transaction=entityManager.getTransaction();
         try {
             transaction.begin();
-            TakeBallEntity data = new TakeBallEntity();
-            data.setIdNameOfBall(1);
-            data.setIdRestrictions(1);
-            data.setIdUser(1);
-            //data.setTime(Date.valueOf(LocalDate.now()));
-            entityManager.persist(data);
+
+//            TakeBallEntity data = new TakeBallEntity();
+//            data.setIdNameOfBall(1);
+//            data.setIdRestrictions(1);
+//            data.setIdUser(1);
+//            data.setTime(Date.valueOf(LocalDate.now()));
+
+            LocalDate myObj = LocalDate.now();
+            entityManager.persist(new TakeBallEntity
+                    (1,1,1,1,Date.valueOf(myObj)));
 
             transaction.commit();
         }
@@ -37,9 +41,11 @@ public class main {
 
 
 
+    }
+    public static void jpa(){
         jpaEntity p = new jpaEntity();
         p.upConnect();
-        TakeBall.insert(1,1,1, Date.valueOf(LocalDate.now()));
+        TakeBall.insertt(1,1,1, Date.valueOf(LocalDate.now()));
         TakeBall.printTable();
         p.closeConnect();
     }

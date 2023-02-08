@@ -7,13 +7,18 @@ import java.sql.Date;
 import java.util.List;
 
 public class TakeBall extends jpaEntity{
+
+
     /*
         get:idNameOfBall idRestrictions idUser time
         set:insert into the table
         use:put next line in jpa template
         TakeBall.insert(fName_variable,fName_variable);
      */
-    public static void insert(int  idNameOfBall, int idRestrictions, int idUser , Date time){
+    public static void insert(TakeBallEntity takeBall){
+        entityManager.persist(takeBall);
+    }
+    public static void insertt(int  idNameOfBall, int idRestrictions, int idUser , Date time){
         TakeBallEntity data = new TakeBallEntity();
         data.setIdNameOfBall(idNameOfBall);
         data.setIdRestrictions(idRestrictions);

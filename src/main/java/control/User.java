@@ -5,6 +5,7 @@ import jakarta.persistence.TypedQuery;
 import java.util.List;
 
 public class User extends jpaEntity {
+
     /*
         get:l_name and f_name
         set:UserEntity to insert into the table
