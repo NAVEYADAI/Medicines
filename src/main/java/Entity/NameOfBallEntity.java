@@ -3,7 +3,7 @@ package Entity;
 import jakarta.persistence.*;
 
 @Entity
-@Table(name = "nameofball", schema = "public", catalog = "Medicines")
+@Table(name = "name_of_ball", schema = "public", catalog = "Medicines")
 public class NameOfBallEntity {
     private int id;
     private String nameBall;

@@ -3,11 +3,21 @@ package Entity;
 import jakarta.persistence.*;
 
 @Entity
+@NamedQuery(name = "UserEntity.byDept",query = "select e from UserEntity e")
 @Table(name = "User", schema = "public", catalog = "Medicines")
 public class UserEntity {
     private int id;
     private String fName;
     private String lName;
+
+    public UserEntity() {
+    }
+
+    public UserEntity(int id, String fName, String lName) {
+        this.id = id;
+        this.fName = fName;
+        this.lName = lName;
+    }
 
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id
@@ -60,5 +70,14 @@ public class UserEntity {
         result = 31 * result + (fName != null ? fName.hashCode() : 0);
         result = 31 * result + (lName != null ? lName.hashCode() : 0);
         return result;
+    }
+
+    @Override
+    public String toString() {
+        return "UserEntity{" +
+                "id=" + id +
+                ", fName='" + fName + '\'' +
+                ", lName='" + lName + '\'' +
+                '}';
     }
 }
